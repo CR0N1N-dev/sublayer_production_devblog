@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sublayer Production</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Sublayer Production</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#blog" class="nav-link">Блог</a></li>
+                <li><a href="#about" class="nav-link">О блоге</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Добро пожаловать в Dev Blog сайт от Sublayer Production</h2>
+                <p class="hero-subtitle">Место для изучения разработки, технологий и программирования</p>
+                <a href="#blog" class="hero-button">Читать статьи</a>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2 class="section-title">Последние статьи</h2>
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Статьи будут загружены через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">О блоге</h2>
+                    <p>Этот блог посвящен разработке программного обеспечения, веб-технологиям и всему, что связано с программированием. Здесь вы найдете полезные статьи, советы и опыт разработки.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sublayer Production. Создано с любовью к коду.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для полной статьи -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- Содержимое статьи будет загружено здесь -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
